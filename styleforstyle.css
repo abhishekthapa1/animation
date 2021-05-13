@@ -1,0 +1,54 @@
+
+body{
+    background-color:rgb(135, 177, 224);
+    overflow: hidden;
+}
+#pink{
+    border:5px rebeccapurple;
+}
+.one{
+    width:100px;
+    height:100px;
+    margin-left:80px;
+    justify-content: center;
+    background-color: greenyellow;
+    animation-name: example;   
+    animation-duration: 02s; 
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    from{
+        background-color:greenyellow ;
+    }
+    to{
+        background-color: red;
+    }
+}
+.two{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    margin-left:80px ;
+    background-color: red;
+    position:relative;
+    animation-name:example ;
+    animation-duration: 4s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite;
+    text-align: center;
+
+}
+
+@keyframes example {
+    0% {background-color: red; left:0px; top:0px;}
+    25% {background-color: yellowgreen; left:100px; top:0px;}
+    50% {background-color: blue; left:100px; top:100px;}
+    75% {background-color: green; left:0px; top:100px;}
+    100% {background-color: red; left:0px; top:0px;}
+    
+}
+#text{
+    padding:40px 10px 10px 10px;
+    color:whitesmoke;
+    font-style: bold;
+}
